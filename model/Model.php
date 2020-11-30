@@ -1,13 +1,13 @@
 <?php
 namespace model;
-include_once ('model/User.php');
+include_once ('User.php');
 
 class Model
 {
     public function login($username, $password){
         $this->makeConnection();
         $selection = $this->database->prepare(
-            'SELECT * FROM `users` WHERE `users`,`username` =:username');
+            'SELECT * FROM `users` WHERE `users`.`username` =:username');
         $selection->bindParam(":username", $username);
         $result = $selection->execute();
         if ($result) {

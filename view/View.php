@@ -17,12 +17,7 @@ class View
         $patienten = $this->model->getPatienten();
 
         /*de html template */
-        echo "<!DOCTYPE html>
-                <html lang=\"en\">
-                <head>
-                    <meta charset=\"UTF-8\">
-                    <title>Overzicht medicijnen | HealthOne</title>
-                    <link rel=\"icon\" href=\"img/HealthOneProject.png\">
+        echo ">
                     <style>
                     body {font-family: Arial, Helvetica, sans-serif; background-color: #f2f2f2;}
                         #patienten{
@@ -34,7 +29,7 @@ class View
                         }
                         .patient{
                             width:80%;
-                            background-color:#b6e1fc;
+                            background-color:#fca071;
                             color:darkslategray;
                             font-size:24px;
                             padding:10px;
@@ -67,7 +62,7 @@ class View
         h1{
             text-align: center;
             font-size: 35px;
-            background-color: lightskyblue;
+            background-color: #fa6c1e;
             color: white;
             border-radius: 20px;
             margin: 20px 10px 20px 10px;
